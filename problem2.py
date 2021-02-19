@@ -37,3 +37,18 @@ example:
 Enter a number: -4
 Invalid input
 """
+import math
+
+data = float(input("Please enter a number. "))
+
+string = str(data)
+
+factorial = 1
+
+if data ** (1/3).is_integer():
+    integer = int(data)
+    for i in range(1,integer + 1):
+       factorial = factorial*i
+    print(string + "" + " is " + factorial)
+else:
+    print("Invalid input")
