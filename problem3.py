@@ -17,3 +17,12 @@ example:
 enter a number: 4
 the sum of the series is 1234
 """
+
+number = int(input("Enter an integer. "))
+
+print("the sum of is the series is ", end="")
+
+if number < 10:
+    for i in range(1,number+1):
+        number = i
+        print((number), end="")

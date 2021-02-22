@@ -44,11 +44,11 @@ data = float(input("Please enter a number. "))
 string = str(data)
 
 factorial = 1
+newfactorial = 1
 
 if data ** (1/3).is_integer():
-    integer = int(data)
-    for i in range(1,integer + 1):
-       factorial = factorial*i
+    for i in range(1, data):
+        newfactorial = factorial * i
     print(string + "" + " is " + factorial)
 else:
     print("Invalid input")
